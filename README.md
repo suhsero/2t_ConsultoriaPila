@@ -67,5 +67,5 @@ Se ha seguido una metodología de trabajo profesional:
 
 ## 👨‍💻 Autores
 
-* **Francisco José Álvarez, Joel Guadalix del Rio y Javier Stampa Garcia **
+* ** Francisco José Álvarez, Joel Guadalix del Rio y Javier Stampa Garcia **
 * **Curso:** 1º DAW - Proyecto Final 2Trimestre
