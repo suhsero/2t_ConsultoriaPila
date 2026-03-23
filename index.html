@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultoría Pila | Soluciones Tecnológicas Avanzadas</title>
+    <meta name="description" content="Consultoría informática experta en desarrollo web, ciberseguridad, cloud e inteligencia artificial.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuración personalizada de Tailwind -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        brand: { light: '#60a5fa', DEFAULT: '#3b82f6', dark: '#2563eb' },
-                        spotify: { base: '#121212', elevated: '#181818', highlight: '#282828', text: '#b3b3b3' }
+                        brand: {
+                            light: '#60a5fa',
+                            DEFAULT: '#3b82f6',
+                            dark: '#2563eb',
+                        },
+                        spotify: {
+                            base: '#121212',
+                            elevated: '#181818',
+                            highlight: '#282828',
+                            text: '#b3b3b3',
+                        }
                     }
                 }
             }
         }
     </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-spotify-base text-white font-sans antialiased flex flex-col min-h-screen">
@@ -25,10 +39,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center py-4 md:py-0 md:h-20 gap-4 md:gap-0">
                 <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <img src="logo.png" alt="Logo" class="h-10 w-auto">
-                    <span class="font-bold text-2xl text-white">Consultoría<span class="text-brand">Pila</span></span>
+                    <img src="logo.png" alt="Logo Consultoría Pila" class="h-10 w-auto">
+                    <span class="font-bold text-2xl text-white tracking-tight">Consultoría<span class="text-brand">Pila</span></span>
                 </div>
-                <nav class="flex flex-wrap justify-center gap-4 md:gap-8">
+                <nav class="flex flex-wrap justify-center gap-4 md:gap-8" aria-label="Menú principal">
                     <a href="#inicio" class="text-spotify-text hover:text-white transition-colors font-medium">Inicio</a>
                     <a href="#servicios" class="text-spotify-text hover:text-white transition-colors font-medium">Servicios</a>
                     <a href="#equipo" class="text-spotify-text hover:text-white transition-colors font-medium">Equipo</a>
@@ -39,57 +53,146 @@
     </header>
 
     <main class="flex-grow">
-        <section id="inicio" class="relative bg-spotify-base py-24 md:py-32 text-center overflow-hidden">
+        <!-- inicio -->
+        <section id="inicio" class="relative bg-spotify-base text-white overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-b from-spotify-highlight/40 to-spotify-base opacity-90"></div>
-            <div class="relative z-10">
-                <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Transformamos su visión en <span class="text-brand">Realidad Digital</span></h1>
-                <p class="max-w-2xl mx-auto text-spotify-text mb-10 text-lg">Socio estratégico en tecnología y soluciones de software de vanguardia.</p>
-                <div class="flex justify-center gap-4">
-                    <a href="#servicios" class="bg-brand py-3 px-8 rounded-full font-bold hover:scale-105 transition-transform">Servicios</a>
-                    <a href="#contacto" class="border border-spotify-text py-3 px-8 rounded-full font-bold hover:border-white transition-all">Contacto</a>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-10"></div>
+            
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col items-center text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-white">
+                    Transformamos su visión en <br class="block">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-light to-brand">Realidad Digital</span>
+                </h1>
+                <p class="mt-4 max-w-2xl text-lg md:text-xl text-spotify-text mb-10">
+                    Somos su socio estratégico en tecnología. Ayudamos a empresas a escalar, asegurar e innovar a través de soluciones de software de vanguardia.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#servicios" class="bg-brand hover:bg-brand-light text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:scale-105 transform">
+                        Descubrir Servicios
+                    </a>
+                    <a href="#contacto" class="bg-transparent border border-spotify-text hover:border-white text-white font-bold py-3 px-8 rounded-full transition-all hover:scale-105 transform">
+                        Hablar con un experto
+                    </a>
                 </div>
             </div>
         </section>
 
+        <!-- servicios-->
         <section id="servicios" class="py-20 bg-spotify-base">
-            <div class="max-w-7xl mx-auto px-4">
-                <div id="servicios-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-spotify-text font-semibold tracking-wide uppercase text-sm">Nuestra Experiencia</h2>
+                    <h3 class="mt-2 text-3xl md:text-4xl leading-8 font-extrabold tracking-tight text-white">
+                        Servicios que ofrecemos
+                    </h3>
+                    <p class="mt-4 max-w-2xl text-lg md:text-xl text-spotify-text mx-auto">
+                        Soluciones integrales diseñadas para impulsar el crecimiento y la eficiencia de su negocio.
+                    </p>
+                </div>
+
+                <!-- Contenedor donde JS inyectará las tarjetas de servicios (Responsivo con CSS Grid) -->
+                <div id="servicios-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- El contenido se genera por JS -->
+                </div>
             </div>
         </section>
 
+        <!-- equipo-->
         <section id="equipo" class="py-20 bg-gradient-to-b from-spotify-base to-[#0a0a0a]">
-            <div class="max-w-7xl mx-auto px-4 text-center">
-                <h2 class="text-spotify-text uppercase text-sm font-semibold mb-2">Los Expertos</h2>
-                <h3 class="text-3xl md:text-4xl font-extrabold mb-12">Conozca a nuestro equipo</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-spotify-elevated rounded-xl overflow-hidden hover:bg-spotify-highlight transition-colors pb-6 group cursor-pointer">
-                        <div class="h-48 bg-spotify-highlight mb-4 overflow-hidden">
-                            <img src="pedro.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-spotify-text font-semibold tracking-wide uppercase text-sm">Los Expertos</h2>
+                    <h3 class="mt-2 text-3xl md:text-4xl leading-8 font-extrabold tracking-tight text-white">
+                        Conozca a nuestro equipo
+                    </h3>
+                </div>
+
+                <div id="equipo-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+                    
+                    <!-- Tarjeta Pedro Alonso -->
+                    <div class="bg-spotify-elevated rounded-xl overflow-hidden hover:bg-spotify-highlight transition-colors duration-300 text-center pb-6 group cursor-pointer">
+                        <div class="w-full h-48 bg-spotify-highlight mb-4 overflow-hidden">
+                            <img src="pedro.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300">
                         </div>
-                        <h4 class="font-bold">Pedro Alonso</h4>
-                        <p class="text-spotify-text text-sm">CEO & Fundador</p>
+                        <h4 class="text-lg font-bold text-white">Pedro Alonso</h4>
+                        <p class="text-spotify-text text-sm font-medium mt-1">CEO & Fundador</p>
                     </div>
+
+                    <!-- Tarjeta Inés Velasco -->
+                    <div class="bg-spotify-elevated rounded-xl overflow-hidden hover:bg-spotify-highlight transition-colors duration-300 text-center pb-6 group cursor-pointer">
+                        <div class="w-full h-48 bg-spotify-highlight mb-4 overflow-hidden">
+                            <img src="ines.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <h4 class="text-lg font-bold text-white">Inés Velasco</h4>
+                        <p class="text-spotify-text text-sm font-medium mt-1">CTO</p>
                     </div>
+
+                    <!-- Tarjeta Lucas Vega -->
+                    <div class="bg-spotify-elevated rounded-xl overflow-hidden hover:bg-spotify-highlight transition-colors duration-300 text-center pb-6 group cursor-pointer">
+                        <div class="w-full h-48 bg-spotify-highlight mb-4 overflow-hidden">
+                            <img src="lucas.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <h4 class="text-lg font-bold text-white">Lucas Vega</h4>
+                        <p class="text-spotify-text text-sm font-medium mt-1">Lead UX/UI Designer</p>
+                    </div>
+
+                    <!-- Tarjeta Ana Ramos -->
+                    <div class="bg-spotify-elevated rounded-xl overflow-hidden hover:bg-spotify-highlight transition-colors duration-300 text-center pb-6 group cursor-pointer">
+                        <div class="w-full h-48 bg-spotify-highlight mb-4 overflow-hidden">
+                            <img src="ana.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <h4 class="text-lg font-bold text-white">Ana Ramos</h4>
+                        <p class="text-spotify-text text-sm font-medium mt-1">Ingeniera Cloud Sr.</p>
+                    </div>
+
+                </div>
             </div>
         </section>
 
+        <!-- SECCIÓN: CONTACTO -->
         <section id="contacto" class="py-20 bg-spotify-base">
-            <div class="max-w-4xl mx-auto px-4">
-                <div class="bg-spotify-elevated rounded-xl overflow-hidden flex flex-col md:flex-row">
-                    <div class="bg-spotify-highlight p-10 md:w-1/2">
-                        <h3 class="text-2xl font-bold mb-4">Póngase en contacto</h3>
-                        <p class="text-spotify-text mb-8">Estamos listos para escuchar sobre su próximo proyecto.</p>
-                        <div class="space-y-4 text-spotify-text">
-                            <p><i class="fa-solid fa-location-dot text-brand mr-2"></i> Madrid, España</p>
-                            <p><i class="fa-solid fa-envelope text-brand mr-2"></i> info@consultoriapila.es</p>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-spotify-elevated rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                    <div class="bg-spotify-highlight text-white p-8 md:p-10 w-full md:w-1/2 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-white">Póngase en contacto</h3>
+                            <p class="text-spotify-text mb-8">Estamos listos para escuchar sobre su próximo proyecto. Complete el formulario y nos pondremos en contacto a la brevedad.</p>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-4">
+                                    <i class="fa-solid fa-location-dot text-brand text-xl w-6 text-center"></i>
+                                    <span class="text-spotify-text">Paseo de la Castellana 15, Madrid, España</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <i class="fa-solid fa-phone text-brand text-xl w-6 text-center"></i>
+                                    <span class="text-spotify-text">+34 900 123 456</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <i class="fa-solid fa-envelope text-brand text-xl w-6 text-center"></i>
+                                    <span class="text-spotify-text">info@consultoriapila.es</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-10 md:w-1/2">
-                        <form id="formulario-contacto" class="space-y-4">
-                            <input type="text" placeholder="Nombre" required class="w-full p-3 bg-spotify-highlight rounded-md border-transparent focus:ring-2 focus:ring-brand outline-none">
-                            <input type="email" placeholder="Email" required class="w-full p-3 bg-spotify-highlight rounded-md border-transparent focus:ring-2 focus:ring-brand outline-none">
-                            <textarea placeholder="Mensaje" rows="4" required class="w-full p-3 bg-spotify-highlight rounded-md border-transparent focus:ring-2 focus:ring-brand outline-none"></textarea>
-                            <button type="submit" id="btn-enviar" class="w-full py-3 bg-brand rounded-full font-bold hover:bg-brand-light transition-all">Enviar Mensaje</button>
+
+                    <!-- Formulario -->
+                    <div class="p-8 md:p-10 w-full md:w-1/2">
+                        <form id="formulario-contacto" class="space-y-6">
+                            <div>
+                                <label for="nombre" class="block text-sm font-medium text-white mb-1">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required class="block w-full px-4 py-3 bg-spotify-highlight border-transparent text-white rounded-md shadow-sm focus:ring-2 focus:ring-brand focus:border-transparent transition-colors placeholder-spotify-text" placeholder="Ej. Juan Pérez">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-white mb-1">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required class="block w-full px-4 py-3 bg-spotify-highlight border-transparent text-white rounded-md shadow-sm focus:ring-2 focus:ring-brand focus:border-transparent transition-colors placeholder-spotify-text" placeholder="ejemplo@empresa.com">
+                            </div>
+                            <div>
+                                <label for="mensaje" class="block text-sm font-medium text-white mb-1">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required class="block w-full px-4 py-3 bg-spotify-highlight border-transparent text-white rounded-md shadow-sm focus:ring-2 focus:ring-brand focus:border-transparent transition-colors placeholder-spotify-text" placeholder="¿En qué podemos ayudarle?"></textarea>
+                            </div>
+                            <button type="submit" id="btn-enviar" class="w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-full shadow-sm text-sm font-bold text-white bg-brand hover:bg-brand-light hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-spotify-elevated focus:ring-brand transition-all duration-300">
+                                Enviar Mensaje
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -97,25 +200,101 @@
         </section>
     </main>
 
-    <footer class="bg-black py-8 border-t border-spotify-highlight text-center text-spotify-text text-sm">
-        <p>&copy; 2026 Consultoría Pila. Todos los derechos reservados.</p>
+    <!-- FOOTER -->
+    <footer class="bg-black text-spotify-text py-8 border-t border-spotify-highlight">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Logo Consultoría Pila" class="h-8 w-auto">
+                <span class="font-bold text-xl text-white">Consultoría Pila</span>
+            </div>
+            <div class="text-sm text-center md:text-right">
+                &copy; 2026 Consultoría Pila. Todos los derechos reservados. Proyecto Final 2T.
+            </div>
+        </div>
     </footer>
 
+    <!-- LÓGICA JAVASCRIPT -->
     <script>
-        // Lógica de servicios del Commit 4 (se mantiene igual)
         document.addEventListener('DOMContentLoaded', () => {
+            
             const servicios = [
-                { id: 1, titulo: "Desarrollo a Medida", descripcion: "Apps escalables con React/Node.", icono: "fa-laptop-code" },
-                { id: 2, titulo: "Ciberseguridad", descripcion: "Protección integral de datos.", icono: "fa-shield-halved" },
-                { id: 3, titulo: "Soluciones Cloud", descripcion: "Arquitectura en AWS/Azure.", icono: "fa-cloud" },
-                { id: 4, titulo: "Inteligencia Artificial", descripcion: "Machine Learning avanzado.", icono: "fa-brain" }
+                {
+                    id: 1,
+                    titulo: "Desarrollo a Medida",
+                    descripcion: "Aplicaciones web y móviles escalables construidas con las últimas tecnologías (React, Node.js).",
+                    icono: "fa-laptop-code"
+                },
+                {
+                    id: 2,
+                    titulo: "Ciberseguridad",
+                    descripcion: "Auditorías, pentesting y protección integral para salvaguardar los datos de su empresa.",
+                    icono: "fa-shield-halved"
+                },
+                {
+                    id: 3,
+                    titulo: "Soluciones Cloud",
+                    descripcion: "Migración, arquitectura y gestión de infraestructuras en AWS, Google Cloud y Azure.",
+                    icono: "fa-cloud"
+                },
+                {
+                    id: 4,
+                    titulo: "Inteligencia Artificial",
+                    descripcion: "Automatización de procesos y análisis predictivo mediante Machine Learning avanzado.",
+                    icono: "fa-brain"
+                }
             ];
-            const container = document.getElementById('servicios-container');
-            servicios.forEach(s => {
-                const card = document.createElement('div');
-                card.className = "bg-spotify-elevated p-6 rounded-xl h-48 flex flex-col justify-center";
-                card.innerHTML = `<i class="fa-solid ${s.icono} text-brand text-3xl mb-4"></i><h4 class="font-bold">${s.titulo}</h4><p class="text-xs text-spotify-text mt-2">${s.descripcion}</p>`;
-                container.appendChild(card);
+
+            // Servicios
+            const contenedorServicios = document.getElementById('servicios-container');
+            
+            servicios.forEach(servicio => {
+                const card = document.createElement('article');
+                card.className = "relative h-52";
+                
+                card.innerHTML = `
+                    <!-- Esta div interior tiene posición absoluta. Al hacer hover, se expande por encima (z-50) de lo demás -->
+                    <div class="absolute inset-x-0 top-0 bg-spotify-elevated p-8 rounded-xl hover:bg-spotify-highlight transition-all duration-500 group cursor-pointer flex flex-col justify-center z-10 hover:z-50 drop-shadow-md hover:drop-shadow-2xl">
+                        <div class="w-14 h-14 bg-spotify-highlight rounded-full flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brand transition-all duration-500">
+                            <i class="fa-solid ${servicio.icono} text-white text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white transition-all duration-500">${servicio.titulo}</h4>
+                        
+                        <!-- Contenedor del texto oculto con animación suave de altura y opacidad -->
+                        <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="text-spotify-text leading-relaxed text-sm mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    ${servicio.descripcion}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                contenedorServicios.appendChild(card);
+            });
+
+            // 6. Manipulación del Formulario
+            const formulario = document.getElementById('formulario-contacto');
+            const btnEnviar = document.getElementById('btn-enviar');
+
+            formulario.addEventListener('submit', (e) => {
+                e.preventDefault(); 
+                
+                const textoOriginal = btnEnviar.innerText;
+                
+                btnEnviar.innerHTML = '<i class="fa-solid fa-check mr-2"></i>Enviado';
+                btnEnviar.classList.remove('bg-brand', 'hover:bg-brand-light', 'focus:ring-brand');
+                btnEnviar.classList.add('bg-green-600', 'hover:bg-green-500', 'focus:ring-green-600');
+                btnEnviar.disabled = true; 
+                
+                formulario.reset();
+
+                setTimeout(() => {
+                    btnEnviar.innerText = textoOriginal;
+                    btnEnviar.classList.remove('bg-green-600', 'hover:bg-green-500', 'focus:ring-green-600');
+                    btnEnviar.classList.add('bg-brand', 'hover:bg-brand-light', 'focus:ring-brand');
+                    btnEnviar.disabled = false;
+                }, 3000);
             });
         });
     </script>
