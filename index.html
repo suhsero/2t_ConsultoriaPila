@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-spotify-base text-white font-sans antialiased flex flex-col min-h-screen">
+
     <header class="bg-black sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center py-4 md:py-0 md:h-20 gap-4 md:gap-0">
@@ -72,7 +73,77 @@
                 </div>
             </div>
         </section>
+
+        <section id="servicios" class="py-20 bg-spotify-base">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-spotify-text font-semibold tracking-wide uppercase text-sm">Nuestra Experiencia</h2>
+                    <h3 class="mt-2 text-3xl md:text-4xl leading-8 font-extrabold tracking-tight text-white">
+                        Servicios que ofrecemos
+                    </h3>
+                    <p class="mt-4 max-w-2xl text-lg md:text-xl text-spotify-text mx-auto">
+                        Soluciones integrales diseñadas para impulsar el crecimiento y la eficiencia de su negocio.
+                    </p>
+                </div>
+
+                <div id="servicios-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    </div>
+            </div>
+        </section>
     </main>
 
-    </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const servicios = [
+                {
+                    id: 1,
+                    titulo: "Desarrollo a Medida",
+                    descripcion: "Aplicaciones web y móviles escalables construidas con las últimas tecnologías (React, Node.js).",
+                    icono: "fa-laptop-code"
+                },
+                {
+                    id: 2,
+                    titulo: "Ciberseguridad",
+                    descripcion: "Auditorías, pentesting y protección integral para salvaguardar los datos de su empresa.",
+                    icono: "fa-shield-halved"
+                },
+                {
+                    id: 3,
+                    titulo: "Soluciones Cloud",
+                    descripcion: "Migración, arquitectura y gestión de infraestructuras en AWS, Google Cloud y Azure.",
+                    icono: "fa-cloud"
+                },
+                {
+                    id: 4,
+                    titulo: "Inteligencia Artificial",
+                    descripcion: "Automatización de procesos y análisis predictivo mediante Machine Learning avanzado.",
+                    icono: "fa-brain"
+                }
+            ];
+
+            const contenedorServicios = document.getElementById('servicios-container');
+            
+            servicios.forEach(servicio => {
+                const card = document.createElement('article');
+                card.className = "relative h-52";
+                card.innerHTML = `
+                    <div class="absolute inset-x-0 top-0 bg-spotify-elevated p-8 rounded-xl hover:bg-spotify-highlight transition-all duration-500 group cursor-pointer flex flex-col justify-center z-10 hover:z-50 drop-shadow-md hover:drop-shadow-2xl">
+                        <div class="w-14 h-14 bg-spotify-highlight rounded-full flex items-center justify-center mb-4 group-hover:scale-110 group-hover:bg-brand transition-all duration-500">
+                            <i class="fa-solid ${servicio.icono} text-white text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white transition-all duration-500">${servicio.titulo}</h4>
+                        <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 ease-in-out">
+                            <div class="overflow-hidden">
+                                <p class="text-spotify-text leading-relaxed text-sm mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                                    ${servicio.descripcion}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                contenedorServicios.appendChild(card);
+            });
+        });
+    </script>
+</body>
 </html>
