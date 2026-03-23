@@ -1,0 +1,268 @@
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2
+$ git init
+Initialized empty Git repository in C:/Users/fran0/Desktop/pagina personal/Consultoria pila/pila v2/.git/
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (master)
+$ git checkout -b desarrollo
+Switched to a new branch 'desarrollo'
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git status
+On branch desarrollo
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git add index.html
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git commit -m "chore: Estructura base HTML5 semantica y tailwind"
+[desarrollo (root-commit) 1c2d7bf] chore: Estructura base HTML5 semantica y tailwind
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git add index.html
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git commit -m "style: paleta de colores y temas oscuros usando tailwind"
+[desarrollo b0c6061] style: paleta de colores y temas oscuros usando tailwind
+ 1 file changed, 37 insertions(+)
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git reset --soft HEAD~1
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git add index.html
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git commit -m "asfa"
+[desarrollo 904d121] asfa
+ 1 file changed, 78 insertions(+)
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git reset --soft HEAD~1
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git status
+On branch desarrollo
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git add index.html
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git commit -m "style: Paleta de colores y el tema oscuro con Tailwind"
+[desarrollo 1c73cca] style: Paleta de colores y el tema oscuro con Tailwind
+ 1 file changed, 37 insertions(+)
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git status
+On branch desarrollo
+nothing to commit, working tree clean
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git add index.html
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git commit -m "feat: header de navegacion y seccion hero"
+[desarrollo 880a753] feat: header de navegacion y seccion hero
+ 1 file changed, 41 insertions(+)
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git add index.html
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git commit -m "feat: Renderizado dinamico del apartado servicios mediante JS"
+[desarrollo 74b5fa6] feat: Renderizado dinamico del apartado servicios mediante JS
+ 1 file changed, 72 insertions(+), 1 deletion(-)
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git add index.html
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git add .
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git status
+On branch desarrollo
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Ana.jpg
+        new file:   Ines.jpg
+        new file:   Lucas.jpg
+        new file:   Pedro.jpg
+        modified:   index.html
+        new file:   logo.png
+
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git commit -m "feat: Seccion de equipo y estructura del formulario"
+[desarrollo b8e8377] feat: Seccion de equipo y estructura del formulario
+ 6 files changed, 66 insertions(+), 92 deletions(-)
+ create mode 100644 Ana.jpg
+ create mode 100644 Ines.jpg
+ create mode 100644 Lucas.jpg
+ create mode 100644 Pedro.jpg
+ create mode 100644 logo.png
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git add .
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git status
+On branch desarrollo
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git commit -m "feat: Funcionalidad del formulario (sin backend) y toques finales"
+[desarrollo 2a1480f] feat: Funcionalidad del formulario (sin backend) y toques finales
+ 1 file changed, 229 insertions(+), 50 deletions(-)
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git che
+checkout      cherry        cherry-pick
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git checkout -b main
+Switched to a new branch 'main'
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git merge desarrollo
+Already up to date.
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git puch origin main
+git: 'puch' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git push original main
+fatal: 'original' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ ls
+Ana.jpg  Ines.jpg  Lucas.jpg  Pedro.jpg  index.html  logo.png
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git push origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git remote -v
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git remote add origin https://github.com/suhsero/2t_ConsultoriaPila.git
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+To https://github.com/suhsero/2t_ConsultoriaPila.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/suhsero/2t_ConsultoriaPila.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 933 bytes | 93.00 KiB/s, done.
+From https://github.com/suhsero/2t_ConsultoriaPila
+ * [new branch]      desarrollo -> origin/desarrollo
+ * [new branch]      main       -> origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> main
+
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git push -u origin main
+To https://github.com/suhsero/2t_ConsultoriaPila.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/suhsero/2t_ConsultoriaPila.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git push -f origin main
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (23/23), 700.21 KiB | 35.01 MiB/s, done.
+Total 23 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/suhsero/2t_ConsultoriaPila.git
+ + 2e6bd63...2a1480f main -> main (forced update)
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git checkout develop
+error: pathspec 'develop' did not match any file(s) known to git
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (main)
+$ git checkout desarrollo
+Switched to branch 'desarrollo'
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git merge main
+Already up to date.
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git push origin develop
+error: src refspec develop does not match any
+error: failed to push some refs to 'https://github.com/suhsero/2t_ConsultoriaPila.git'
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git push origin desarrollo
+To https://github.com/suhsero/2t_ConsultoriaPila.git
+ ! [rejected]        desarrollo -> desarrollo (non-fast-forward)
+error: failed to push some refs to 'https://github.com/suhsero/2t_ConsultoriaPila.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$ git push -f origin desarrollo
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/suhsero/2t_ConsultoriaPila.git
+ + 2e6bd63...2a1480f desarrollo -> desarrollo (forced update)
+
+fran0@FranPC MINGW64 /c/users/fran0/desktop/pagina personal/Consultoria pila/pila v2 (desarrollo)
+$
